@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Корсвейн  Макаров](https://up.htmlacademy.ru/htmlcss-individual/2/user/2690333).
-* Наставник: `Неизвестно`.
+* Наставник: [].
+* Сайт:[Мой проект Седона](https://lioneljsonson.github.io/MyprojectSedona/)
 
 ---
 
