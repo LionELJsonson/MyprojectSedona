@@ -43,7 +43,44 @@
 
 <main class="main-catalog">
 
-  <h1 class="catalog-header">Гостиницы Седоны</h1>
+  <section class="filter">
+    <form class="form-filter" method="post" action="#">
+      <h2 class="filter-header">Инфраструктура:</h2>
+      <ul class="filter-list">
+        <li class="filter-item">
+          <label><input type="checkbox" checked>Бассейн</label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox" checked>Парковка</label>
+        </li>
+        <li class="filter-item">
+          <label><input type="checkbox">Wi-Fi</label>
+        </li>
+      </ul>
+
+      <h2 class="filter-header">Тип жилья:</h2>
+      <ul class="filter-list">
+        <li class="filter-item">
+          <label><input type="radio" checked>Гостиница</label>
+        </li>
+        <li class="filter-item">
+          <label><input type="radio">Мотель</label>
+        </li>
+        <li class="filter-item">
+          <label><input type="radio">Апартаменты</label>
+        </li>
+      </ul>
+
+      <label>
+        Стоимость, ₽:
+        <input type="text" placeholder="от">
+        <input type="text" placeholder="до">
+        <input type="range" min="0" max="10000" step="1" value="1">
+      </label>
+      <label><button type="submit">Применить</button></label>
+      <label><button type="submit">Сбросить</button></label>
+    </form>
+  </section>
 
 </main>
 
