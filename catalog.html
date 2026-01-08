@@ -44,8 +44,9 @@
 <main class="main-catalog">
 
   <section class="filter">
+    <h1 class="filter-header">Гостиницы Седоны</h1>
     <form class="form-filter" method="post" action="#">
-      <h2 class="filter-header">Инфраструктура:</h2>
+      <b>Инфраструктура:</b>
       <ul class="filter-list">
         <li class="filter-item">
           <label><input type="checkbox" checked>Бассейн</label>
@@ -58,7 +59,7 @@
         </li>
       </ul>
 
-      <h2 class="filter-header">Тип жилья:</h2>
+      <b>Тип жилья:</b>
       <ul class="filter-list">
         <li class="filter-item">
           <label><input type="radio" checked>Гостиница</label>
@@ -77,10 +78,33 @@
         <input type="text" placeholder="до">
         <input type="range" min="0" max="10000" step="1" value="1">
       </label>
-      <label><button type="submit">Применить</button></label>
-      <label><button type="submit">Сбросить</button></label>
+      <label>
+        <button type="submit">Применить</button>
+      </label>
+      <label>
+        <button type="submit">Сбросить</button>
+      </label>
     </form>
   </section>
+
+  <section class="result-reserch">
+    <h2 class="result-header">Найдено гостиниц: 38</h2>
+    <label>
+      <select>
+        <option>Сначала дешевыe</option>
+        <option>Сначала дорогие</option>
+      </select>
+    </label>
+    <ul class="result-list">
+      <li class="result-item">
+        <img src="img/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
+        <h3 class="result-header">Amara Resort & Spa</h3>
+      </li>
+    </ul>
+
+
+  </section>
+
 
 </main>
 
