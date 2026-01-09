@@ -44,68 +44,139 @@
 <main class="main-catalog">
 
   <section class="filter">
-    <h1 class="filter-header">Гостиницы Седоны</h1>
-    <form class="form-filter" method="post" action="#">
-      <b>Инфраструктура:</b>
+    <form action="#" method="post">
+      <h1 class="filter-title">Гостиницы Седоны</h1>
+      <b class="header-sublist">Инфраструктура:</b>
       <ul class="filter-list">
         <li class="filter-item">
-          <label><input type="checkbox" checked>Бассейн</label>
+          <label>
+            <input type="checkbox" name="wifi" checked>
+          </label>Бассейн
         </li>
         <li class="filter-item">
-          <label><input type="checkbox" checked>Парковка</label>
+          <label>
+            <input type="checkbox" name="parking" checked>
+          </label>Парковка
         </li>
         <li class="filter-item">
-          <label><input type="checkbox">Wi-Fi</label>
+          <label>
+            <input type="checkbox" name="pool">
+          </label>Wi-Fi
         </li>
       </ul>
 
-      <b>Тип жилья:</b>
-      <ul class="filter-list">
-        <li class="filter-item">
-          <label><input type="radio" checked>Гостиница</label>
+      <ul class="house-list">
+        <li class="house-item">
+          <label>
+            <input type="radio" name="house" checked>
+          </label>Гостиница
         </li>
-        <li class="filter-item">
-          <label><input type="radio">Мотель</label>
+        <li class="house-item">
+          <label>
+            <input type="radio" name="motel">
+          </label>Мотель
         </li>
-        <li class="filter-item">
-          <label><input type="radio">Апартаменты</label>
+        <li class="house-item">
+          <label>
+            <input type="radio" name="apartment">
+          </label>Апартаменты
         </li>
       </ul>
 
-      <label>
-        Стоимость, ₽:
-        <input type="text" placeholder="от">
-        <input type="text" placeholder="до">
-        <input type="range" min="0" max="10000" step="1" value="1">
+      <label>Стоимость, ₽:
+        <input type="text" name="startValue" placeholder="От">
+        <input type="text" name="endValue" placeholder="До">
       </label>
+      <div class="range">
+        <!--<input type="range" name="range" min="0" max="10000" step="1">-->
+      </div>
+      <button type="button">Применить</button>
+      <button type="button">Сбросить</button>
+    </form>
+    </section>
+
+  <h2 class="hotel-reserch">Найдено гостиниц: 38</h2>
+  <select>
+    <option>Сначала дешевые</option>
+    <option>Сначала дорогие</option>
+  </select>
+
+
+  <div class="filter-sort">
+    <!---карточки фильтрации-->
+  </div>
+
+  <ul class="reserch-list">
+    <li class="reserch-item">
+        <img src="img/hotel-1.jpg" alt="Amara Resort & Spa" width="300" height="212">
+        <h3 class="hotel-title">Amara Resort & Spa</h3>
+        <p class="description-hotel">Гостиница</p>
+        <p class="price-hotel">От 4000 ₽</p>
+        <p class="hotel-reitings">Рейтинг: 8,5</p>
+        <button type="button" class="hotel-describe">подробнее</button>
+        <button type="button" class="hotel-favourites">в избранное</button>
+    </li>
+    <li class="reserch-item">
+        <img src="img/hotel-2.jpg" alt="Villas at Poco Diablo" width="300" height="212">
+        <h3 class="hotel-title">Villas at Poco Diablo</h3>
+        <p class="description-hotel">Гостиница</p>
+        <p class="price-hotel">От 5000 ₽</p>
+        <p class="hotel-reitings">Рейтинг: 9,2</p>
+        <button type="button" class="hotel-describe">подробнее</button>
+        <button type="button" class="hotel-favourites-add">в избранное</button>
+    </li>
+    <li class="reserch-item">
+        <img src="img/hotel-3.jpg" alt="Desert Quail Inn" width="300" height="212">
+        <h3 class="hotel-title">Villas at Poco Diablo</h3>
+        <p class="description-hotel">Гостиница</p>
+        <p class="price-hotel">От 2500 ₽</p>
+        <p class="hotel-reitings">Рейтинг: 6,9</p>
+        <button type="button" class="hotel-describe">подробнее</button>
+        <button type="button" class="hotel-favourites">в избранное</button>
+    </li>
+    <li class="reserch-item">
+        <img src="img/hotel-4.jpg" alt="GreenTree Inn" width="300" height="212">
+        <h3 class="hotel-title">Villas at Poco Diablo</h3>
+        <p class="description-hotel">Гостиница</p>
+        <p class="price-hotel">От 1500 </p>
+        <p class="hotel-reitings">Рейтинг: 5,0</p>
+        <button type="button" class="hotel-describe">подробнее</button>
+        <button type="button" class="hotel-favourites">в избранное</button>
+    </li>
+  </ul>
+
+  <ul class="pagination-list">
+    <li class="pagination-item">
+      <a href="#">1</a>
+    </li>
+    <li class="pagination-item">
+        <a href="#">2</a>
+    </li>
+    <li class="pagination-item">
+        <a href="#">3</a>
+    </li>
+    <li class="pagination-item">
+      <a href="#">4</a>
+    </li>
+    <li class="pagination-item">
+      <a href="#">...</a>
+    </li>
+    <li class="pagination-item">
+      <a href="#">10</a>
+    </li>
+  </ul>
+
+  <section class="subscribe">
+    <form action="#" method="post">
+      <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+      <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <label>
-        <button type="submit">Применить</button>
-      </label>
-      <label>
-        <button type="submit">Сбросить</button>
+        <span class="visually-hidden">E-mail</span>
+        <input type="email" placeholder="Ваш e-mail">
+        <button type="button">Подписаться</button>
       </label>
     </form>
   </section>
-
-  <section class="result-reserch">
-    <h2 class="result-header">Найдено гостиниц: 38</h2>
-    <label>
-      <select>
-        <option>Сначала дешевыe</option>
-        <option>Сначала дорогие</option>
-      </select>
-    </label>
-    <ul class="result-list">
-      <li class="result-item">
-        <img src="img/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
-        <b>Amara Resort & Spa</b>
-
-      </li>
-    </ul>
-
-
-  </section>
-
 
 </main>
 
