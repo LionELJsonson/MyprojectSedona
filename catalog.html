@@ -57,6 +57,7 @@
   </ul>
 
   <form method="post" action="#">
+
       <h2 class="catalog-title">Инфраструктура</h2>
       <ul class="catalog-list">
         <li class="catalog-list-item">
@@ -75,7 +76,50 @@
           </label>Wi-Fi
         </li>
       </ul>
+
+      <h2 class="catalog-title">Тип жилья:</h2>
+      <ul class="catalog-list">
+        <li class="catalog-list-item">
+          <label>
+            <input type="radio" name="Hotel" value="Hotel" checked>
+          </label>Гостиница
+        </li>
+        <li class="catalog-list-item">
+        <label>
+            <input type="radio" name="Motel" value="Motel">
+        </label>Мотель
+        </li>
+        <li class="catalog-list-item">
+          <label>
+            <input type="radio" name="Apartments" value="Apartment">
+          </label>Апартаменты
+        </li>
+      </ul>
+
+    <div class="catalog-form-range">
+      <h3 class="catalog-title">Стоимость, ₽:</h3>
+      <label>от
+        <input type="text" name="startValue">
+      </label>
+      <label>
+        <input type="text" name="endValue">
+      </label>до
+    </div>
+    <div><input type="range"></div>
   </form>
+
+  <button type="submit" class="catalog-form-button">Применить</button>
+  <button class="catalog-form-reset">Сбросить</button>
+
+  <section class="catalog-research-hotel">
+      <h3 class="catalog-title">Найдено гостиниц: 38</h3>
+
+    <select name="catalog-sort">
+        <option value="hight">Сначала дорогие</option>
+        <option value="low">Сначала дешевые</option>
+      </select>
+  </section>
+
 
 </main>
 
